@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -24,7 +24,7 @@ export default function Login() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "userRegister");
-        if (data.status == "ok") {
+        if (data.status === "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactPaginate from 'react-paginate';
@@ -13,11 +13,11 @@ export default function AdminHome({ userData }) {
 
 
 
-  useEffect(() => {
+  useEffect((e) => {
     currentPage.current=1;
     // getAllUser();
     getPaginatedUsers();
-  }, []);
+  });
 
 
   //fetching all user

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React from "react";
 import ImageUpload from "../components/imageUpload."
 
 export default function UserHome({ userData }) {

@@ -53,13 +53,13 @@ function ImageUpload() {
                     type="file"
                     onChange={covertToBase64}
                 />
-                {image == "" || image == null ? "" : <img width={100} height={100} src={image} />}
+                {image === "" || image == null ? "" : <img width={100} height={100} src={image} alt=""/>}
                 <button onClick={uploadImage}>Upload</button>
                 <br />
                 <div className="auth-inner0">
                     {allImage.map(data => {
                         return (
-                            <img  src={data.image} height={100} width={100} key={data._id} className="image" />
+                            <img  src={data.image} height={100} width={100} key={data._id} className="image" alt="" />
 
                         )
                     })}
